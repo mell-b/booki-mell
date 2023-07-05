@@ -85,9 +85,14 @@ nav a:hover {
 /* SEARCH-FORM */
 .search-form {
    display: flex;
- 
+   align-items: center;
+   font-size: 1.2rem;
 }
 
+.search-form * {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
 
 .search-form i {
     padding: 1rem 1.2rem;
@@ -96,7 +101,7 @@ nav a:hover {
 }
 
 .search-form input {
-    padding-right: 9rem;
+    flex-basis: 16rem;
     border: 1px solid var(--lightgrey);
 }
 
@@ -105,12 +110,13 @@ nav a:hover {
     color:white;
     border-radius: 0 1rem 1rem 0;
     border: 1px solid var(--blue);
-    font-size: 1.2rem;
-    padding: 1rem 1.5rem;
     cursor: pointer;
+    opacity: 0.9;
+    transition: transform 200ms;
 }
 
-.search-form input::placeholder {
-    font-size: 1.2rem;
-    padding: 2rem;
+.search-form button:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
+
