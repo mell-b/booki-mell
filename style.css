@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2? family= Raleway:wght@300;400;500;600;700;800;900 & display=swap');
 
+:root {
+    --blue: #0065fc; 
+    --lightgrey:#f2f2f2;
+}
 
 * {
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
+}
+
+body {
+    margin: 0;
 }
 
 a {
@@ -11,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+/* NAVBAR */
 nav {
     display: flex;
     align-items: center;
@@ -43,7 +52,7 @@ nav a:hover {
 
 }
 
-.sub-nav a:hover{
+.sub-nav a:hover {
     color: #0065fc;
 }
 
@@ -58,12 +67,50 @@ nav a:hover {
     text-align: center;
     flex-basis: 50%;
     border-bottom: 3px solid lightgrey;
-}
+ }
 
 .sub-nav a:hover {
     border-bottom:3px solid #0065fc;
     border-top-color:transparent ;
-} 
+ } 
+
+}
+
+/* BODY */
+.wrapper {
+    padding: 0 2rem;
+}
 
 
+/* SEARCH-FORM */
+.search-form {
+   display: flex;
+ 
+}
+
+
+.search-form i {
+    padding: 1rem 1.2rem;
+    background-color: var(--lightgrey);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search-form input {
+    padding-right: 9rem;
+    border: 1px solid var(--lightgrey);
+}
+
+.search-form button {
+    background-color: var(--blue);
+    color:white;
+    border-radius: 0 1rem 1rem 0;
+    border: 1px solid var(--blue);
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.search-form input::placeholder {
+    font-size: 1.2rem;
+    padding: 2rem;
 }
