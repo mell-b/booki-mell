@@ -379,7 +379,6 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem ));
     grid-template-rows: repeat(5,1fr);
     gap: 2rem;
-    /* margin-bottom: 20vh; */
     margin-bottom: 3rem;
     margin-top: 2rem;
     justify-content: center;
@@ -479,5 +478,5 @@ footer p {
 
 footer p:hover {
     transform: scale(1.02);
-    color: darkblueg;
+    color: darkblue;
 }
