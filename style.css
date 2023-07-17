@@ -380,7 +380,7 @@ nav a:hover {
     grid-template-rows: repeat(5,1fr);
     gap: 2rem;
     /* margin-bottom: 20vh; */
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
     justify-content: center;
 }
@@ -470,3 +470,6 @@ footer {
     padding: 1rem;
 }
 
+footer p {
+    cursor: pointer;
+}
